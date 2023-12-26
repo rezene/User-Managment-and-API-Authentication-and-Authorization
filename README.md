@@ -13,3 +13,6 @@ public Role createRole(@Valid @RequestBody RoleRequest roleRequest)
 ### You can Create dyanmic roles using the role managment API
  - Create A Role  like Admin, Supper Admin, or whatever you need
  - Assign Privileges to the role from the list of privileges registered above.
+
+### Access Swagger using 
+- http://localhost:8195/swagger-ui/index.html#/
