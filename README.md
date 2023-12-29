@@ -10,6 +10,8 @@ public Role createRole(@Valid @RequestBody RoleRequest roleRequest)
 
 - Incorporate the privileges, defined for each API in the controllers, into the database using the privileges controller in Swagger.
 
+![Alt text](image.png)
+
 ### You can Create dyanmic roles using the role managment API
  - Create A Role  like Admin, Supper Admin, or whatever you need
  - Assign Privileges to the role from the list of privileges registered above.
