@@ -1,10 +1,18 @@
-## Dynamic Role and Privilege Authentication, Authorization and Auditing Using Spring Security
+## Dynamic Role and Privilege Authentication, Authorization and Auditing Using Spring Security and JWT
 
-### Managing Privileges
-- Establish the privilege string required to access the API request. For instance:
+# API Access Privileges
+
+This project includes API endpoints that require specific privileges for access. Each endpoint is secured using role-based access control. 
+
+## Example: Creating a Role
+
+To access the API for creating a new role, the following Java method is defined:
+
+```java
 @PostMapping
 @PreAuthorize("hasRole('Create-Role')")
 public Role createRole(@Valid @RequestBody RoleRequest roleRequest)
+
 
 - Here, ‘Create-Role’ is the privilege necessary to access this API.
 
